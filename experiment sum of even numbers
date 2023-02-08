@@ -1,0 +1,22 @@
+#include<stdio.h>
+ 
+int main()
+{
+  int i, n, Sum = 0;
+ 
+  printf(" Enter the Maximum Limit Value : ");
+  scanf("%d", &n);
+  
+  printf(" Even Numbers between 0 and %d are : ", n);
+  for(i = 1; i <=n; i++)
+  {
+    if ( i%2 == 0 ) 
+    {
+  	printf("%d  ", i);
+        Sum = Sum + i;
+    }
+  }
+  printf("\n The Sum of All Even Numbers upto %d  = %d", n, Sum);
+
+  return 0;
+}
